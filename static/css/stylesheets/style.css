@@ -62,3 +62,78 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+@font-face {
+  font-family: 'quicksandlight_oblique';
+  src: url("../../font/quicksand_light_oblique-webfont.eot");
+  src: url("../../font/quicksand_light_oblique-webfont.eot?#iefix") format("embedded-opentype"), url("../../font/quicksand_light_oblique-webfont.woff") format("woff"), url("../../font/quicksand_light_oblique-webfont.ttf") format("truetype"), url("../../font/quicksand_light_oblique-webfont.svg#quicksandlight_oblique") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quicksandbook';
+  src: url("../../font/quicksand_book-webfont.eot");
+  src: url("../../font/quicksand_book-webfont.eot?#iefix") format("embedded-opentype"), url("../../font/quicksand_book-webfont.woff") format("woff"), url("../../font/quicksand_book-webfont.ttf") format("truetype"), url("../../font/quicksand_book-webfont.svg#quicksandbook") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quicksandbold_oblique';
+  src: url("../../font/quicksand_bold_oblique-webfont.eot");
+  src: url("../../font/quicksand_bold_oblique-webfont.eot?#iefix") format("embedded-opentype"), url("../../font/quicksand_bold_oblique-webfont.woff") format("woff"), url("../../font/quicksand_bold_oblique-webfont.ttf") format("truetype"), url("../../font/quicksand_bold_oblique-webfont.svg#quicksandbold_oblique") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 14, ../sass/style.scss */
+body, html
+div.wrapper {
+  width: 960px;
+}
+/* line 21, ../sass/style.scss */
+body header nav, html
+div.wrapper header nav {
+  font-family: quicksandlight_oblique;
+  font-size: 1.5em;
+  color: #2d2d2d;
+}
+/* line 29, ../sass/style.scss */
+body h2, html
+div.wrapper h2 {
+  font-family: quicksandbook;
+  color: #2d2d2d;
+  font-size: 1.5em;
+}
+/* line 35, ../sass/style.scss */
+body h2 em, html
+div.wrapper h2 em {
+  font-family: quicksandlight_oblique;
+  color: #2d2d2d;
+}
+/* line 44, ../sass/style.scss */
+body div#projects ul, html
+div.wrapper div#projects ul {
+  font-family: quicksandbold_oblique;
+  color: #f8f8f8;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+/* line 51, ../sass/style.scss */
+body div#projects ul li, html
+div.wrapper div#projects ul li {
+  display: inline-block;
+  height: 222px;
+  width: 222px;
+  background-color: #89befa;
+  vertical-align: middle;
+  border-radius: 111px;
+  text-align: center;
+  position: relative;
+}
+/* line 62, ../sass/style.scss */
+body div#projects ul li span, html
+div.wrapper div#projects ul li span {
+  margin: 50% auto;
+}

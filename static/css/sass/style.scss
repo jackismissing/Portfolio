@@ -1,1 +1,71 @@
-@import "compass/reset"
+@import "compass/reset";
+@import "_font.scss";
+
+$text-color:#2d2d2d;
+$project-title-color:#f8f8f8;
+
+$blue: #89befa;
+
+$home-text-size:1.500em;
+
+
+body,html
+
+div.wrapper{
+
+	width:960px;
+
+	header
+	{
+		nav
+		{
+			font-family: quicksandlight_oblique;
+			font-size: $home-text-size;
+			color: $text-color;
+		}
+	}
+
+	h2
+	{
+		font-family: quicksandbook;
+		color: $text-color;
+		font-size: $home-text-size;
+
+		em
+		{
+			font-family: quicksandlight_oblique;
+			color: $text-color;
+		}
+	}
+
+	div#projects
+	{
+		ul
+		{
+			font-family: quicksandbold_oblique;
+			color: $project-title-color;
+			font-size: $home-text-size;
+			font-weight: normal;
+
+			li
+			{
+				display:inline-block;
+				height:222px;
+				width:222px;
+				background-color: $blue;
+				vertical-align: middle;
+				border-radius:111px; 
+				text-align: center;
+				position:relative;
+
+				span
+				{
+					margin:50% auto;
+				}
+			}
+		}
+	}
+}
+
+
+
