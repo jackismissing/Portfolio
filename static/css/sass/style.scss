@@ -5,31 +5,81 @@ $text-color:#2d2d2d;
 $project-title-color:#f8f8f8;
 
 $blue: #89befa;
+$background-color: #f8f8f8;
 
 $home-text-size:1.500em;
 
+/* Media queries variables */
+$tablet: "only screen and (max-width : 960px)";
+$phone: "only screen and (max-width : 360px)";
+
 
 body,html
+{
+	background: $background-color
+}
 
 div.wrapper{
 
 	width:960px;
-	border:solid 1px red;
 	margin:auto;
 	text-align: center;
+	position: relative;
 
 	header
 	{
+		position: relative;
+		margin-top:70px;
+
+		h1
+		{
+			font-size:0px;
+		}
+
+		div#logo
+		{
+			width:187px;
+			margin:auto;
+			position:relative;
+			z-index:2;
+
+			background: $background-color;
+			text-align: center;
+		}
+
+
 		nav
 		{
+			z-index:1;
+
+			width:100%;
+			position:absolute;
+			left:0;
+			top:63px;
+
 			font-family: quicksandlight_oblique;
 			font-size: $home-text-size;
 			color: $text-color;
+
+			border-bottom:solid 1px #2d2d2d;
+
+			ul
+			{
+				width:300px;
+
+				li
+				{
+					display: inline-block;
+				}
+			}
+			
 		}
 	}
 
 	h2
 	{
+		margin:70px 0 0 0;
+
 		font-family: quicksandbook;
 		color: $text-color;
 		font-size: $home-text-size;
@@ -43,25 +93,48 @@ div.wrapper{
 
 	div#projects
 	{
-		margin-top:100px;
+		margin-top:70px;
 
 		ul
 		{
-			font-family: quicksandbold_oblique;
+			font-family: quicksandlight_oblique;
 			color: $project-title-color;
 			font-size: $home-text-size;
 			font-weight: normal;
 			text-align: left;
-			
 
+			margin-top:-45px;
+			
+			li:hover {
+				img {
+					opacity:1;
+					transition:opacity 0.2s linear;
+				}
+				div.hexagon-center {
+					opacity:0;
+					transition:opacity 0.2s linear;
+				}
+
+			}
+			
 
 			li
 			{
 				display:inline-block;
-				height:222px;
-				width:222px;
+				height:250px;
+				width:226px;
 				margin-left:10px;
-				margin-bottom:-43px;
+				margin-bottom:-56px;
+
+				position: relative;
+
+				img
+				{
+					position:absolute;
+					top:47px;
+					opacity:0;
+					transition:opacity 0.2s linear;
+				}
 
 				
 
@@ -76,12 +149,12 @@ div.wrapper{
 
 					position: absolute;
 
-					top:-51px;
-    				
+					top:-65px;
 
-					border-bottom: 51px solid $blue;
-					border-left: 111px solid transparent;
-					border-right: 111px solid transparent;
+
+					border-bottom: 65px solid $blue;
+					border-left: 113px solid transparent;
+					border-right: 113px solid transparent;
 
 				}
 
@@ -90,6 +163,9 @@ div.wrapper{
 					background:$blue;
 					height:120px;
 					position:relative;
+
+					opacity:1;
+					transition:opacity 0.2s linear;
 				}
 
 
@@ -105,21 +181,26 @@ div.wrapper{
 					left:0;
     				
 
-					border-top: 51px solid $blue;
-					border-left: 111px solid transparent;
-					border-right: 111px solid transparent;
+					border-top: 65px solid $blue;
+					border-left: 113px solid transparent;
+					border-right: 113px solid transparent;
 				}		
 
 				span
 				{
 					margin:50% auto;
+					display:block;
+					height:120px;
+					line-height: 120px;
+					text-align: center;
+
 				}
 			}
 
 
 			li:nth-child(7n-2)
 			{
-				margin-left:127px;
+				margin-left:128px;
 			}
 		}
 	}
@@ -127,11 +208,11 @@ div.wrapper{
 	div#social
 	{
 
-		width:310px;
-		margin:auto;
+		margin:175px auto 0 auto;
 
 		ul
 		{
+			margin-top:70px;
 			text-align: center;
 
 			li
@@ -147,57 +228,226 @@ div.wrapper{
 
 				a.github
 				{
-					background:url('../images/github.png') 0 0 no-repeat;
+					background:url('../../img/github.png') 0 0 no-repeat;
 					transition:background 0.2s linear;
 				}
 				a.github:hover
 				{
-					background:url('../images/github.png') 0 -64px no-repeat;
+					background:url('../../img/github.png') 0 -64px no-repeat;
 					transition:background 0.2s linear;	
 				}
 				a.flickr
 				{
-					background:url('../images/flickr.png') 0 0 no-repeat;
+					background:url('../../img/flickr.png') 0 0 no-repeat;
 					transition:background 0.2s linear;
 				}
 				a.flickr:hover
 				{
-					background:url('../images/flickr.png') 0 -64px no-repeat;
+					background:url('../../img/flickr.png') 0 -64px no-repeat;
 					transition:background 0.2s linear;
 				}
 				a.pinterest
 				{
-					background:url('../images/pinterest.png') 0 0 no-repeat;
+					background:url('../../img/pinterest.png') 0 0 no-repeat;
 					transition:background 0.2s linear;
 				}
 				a.pinterest:hover
 				{
-					background:url('../images/pinterest.png') 0 -64px no-repeat;
+					background:url('../../img/pinterest.png') 0 -64px no-repeat;
 					transition:background 0.2s linear;
 				}
 				a.twitter
 				{
-					background:url('../images/twitter.png') 0 0 no-repeat;
+					background:url('../../img/twitter.png') 0 0 no-repeat;
 					transition:background 0.2s linear;
 				}
 				a.twitter:hover
 				{
-					background:url('../images/twitter.png') 0 -64px no-repeat;
+					background:url('../../img/twitter.png') 0 -64px no-repeat;
 					transition:background 0.2s linear;
 				}
 				a.linkedin
 				{
-					background:url('../images/github.png') 0 0 no-repeat;
+					background:url('../../img/github.png') 0 0 no-repeat;
 					transition:background 0.2s linear;
 				}
 				a.linkedin:hover
 				{
-					background:url('../images/github.png') 0 0 no-repeat;
+					background:url('../../img/github.png') 0 0 no-repeat;
 					transition:background 0.2s linear;
 				}
 			}
 		}
 
+	}
+}
+
+@media #{$tablet}
+{
+	div.wrapper{
+		width:100%;
+
+		header
+		{
+			nav
+			{
+				display: none;
+			}
+
+			h2#description
+			{
+				padding:0 20px;
+			}
+		}
+
+		
+		div#projects
+		{
+			margin:70px 0 0 0;
+			ul
+			{
+				margin:0;
+
+				li:hover {
+
+					div.hexagon-center {
+						opacity:1;
+						transition:none;
+					}
+
+				}
+
+				li
+				{
+					display:block;
+					height:225px;
+					width:100%;
+					margin:0 0 5px 0;
+
+					img{
+						display: none;
+					}
+
+					div.hexagon-center:before
+					{
+						display: none;
+						position:relative;
+						top:0;
+
+					}
+
+					div.hexagon-center
+					{
+						background:$blue;
+						position:relative;
+						top:0;
+						height:225px;
+						transition:none;
+
+					}
+
+
+					div.hexagon-center:after
+					{
+						display: none;
+						position:relative;
+						top:0;
+					}		
+
+					span
+					{
+						margin:0;
+						display:block;
+						height:225px;
+						line-height: 225px;
+						text-align: center;
+
+					}
+				}
+
+
+				li:nth-child(7n-2)
+				{
+					margin-left:0;
+				}
+			}	
+		}
+
+		div#social
+		{
+
+			margin:70px auto 0 auto;
+
+			h2
+			{
+				display:none;
+			}
+
+			ul
+			{
+				margin:0;
+			
+
+				li
+				{
+					display: inline-block;
+
+					a
+					{
+						display:block;
+						width:64px;
+						height:64px;
+					}
+
+					a.github
+					{
+						background:url('../../img/github.png') 0 -64px no-repeat;
+
+					}
+					
+					a.flickr
+					{
+						background:url('../../img/flickr.png') 0 -64px no-repeat;
+						
+					}
+					a.pinterest
+					{
+						background:url('../../img/pinterest.png') 0 -64px no-repeat;
+						
+					}
+
+					a.twitter
+					{
+						background:url('../../img/twitter.png') 0 -64px no-repeat;
+						
+					}
+
+					a.linkedin
+					{
+						background:url('../../img/twitter.png') 0 -64px no-repeat;
+						
+					}
+
+				}
+			}
+			
+		}
+	}
+}
+
+@media #{$phone}
+{
+	div.wrapper{
+		width:100%;
+
+		header
+		{
+
+			h2#description
+			{
+				text-align: left;
+			}
+		}
 	}
 }
 
