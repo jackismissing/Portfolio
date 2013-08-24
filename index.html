@@ -43,7 +43,18 @@
 			<ul>
 				<li>
 					<img src="static/img/feng.png" alt="lol"/>					
-					<div class="hexagon-center"><span>Heapself</span></div>					
+					<div class="hexagon-center">
+						<span class='title'>Heapself</span>
+						<article class="projet-content no-display">
+							<h1 class="project-title"></h1>
+							<img src="http://placehold.it/600x400" alt="" class="project-img">
+							<p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non risus a eros vestibulum iaculis vitae eu lacus. Aliquam erat volutpat. Vivamus tristique, nulla id dapibus facilisis, lacus dui congue libero, sed congue ante eros vitae magna. Curabitur non felis faucibus, interdum risus vel, congue urna. Aliquam sapien mauris, cursus a felis et, faucibus dapibus libero. Proin eu lectus eu metus vehicula fringilla vel vitae nisi. Nunc sit amet lacus auctor nisl hendrerit euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla felis mi, ornare vitae sem id, hendrerit pulvinar nisi. Ut ac sapien et ipsum tincidunt tincidunt. Nulla elementum a arcu vitae fermentum. Ut hendrerit, tortor non consectetur feugiat, dui ipsum laoreet nibh, vel semper dolor erat at dolor. Curabitur viverra, lorem quis sagittis consequat, nibh urna molestie magna, a volutpat purus ligula eget odio.
+
+Phasellus id scelerisque nunc, id iaculis mi. Ut purus nibh, vestibulum in dolor at, pharetra tempor augue. Integer auctor et odio ac consectetur. Vestibulum pellentesque, urna vitae lacinia scelerisque, nisi nulla dictum felis, nec suscipit libero quam eu leo. Nulla viverra mi luctus magna placerat, eget tincidunt lacus tincidunt. Phasellus bibendum velit non lobortis laoreet. Nulla sit amet euismod nunc, nec lobortis quam. Donec ut sagittis magna.</p>
+						</article>
+					</div>
+						
+					
 				</li><!--
 				--><li>					
 					<div class="hexagon-center"><span>Trees</span></div>					
@@ -81,29 +92,13 @@
 	<div id="project-details">
 		<div class="panel left"></div>
 		<div class="panel right"></div>
-		<article id="projet-content">
-			<h1 id="project-title"></h1>
-			<img src="" alt="" id="project-img">
-			<p id="project-description"></p>
-		</article>
 	</div>
 
 	<script src="static/js/jquery.js"></script>
+	<script src="static/js/main.js"></script>
 	<script>
 	$(document).ready(function(){
-		$('.hexagons li').on('click',function(){
-			$('#project-details').addClass('active');
-			$('#project-details .panel').addClass('active');
-		})
-
-		$('#project-details .panel').on('click',function(){
-			
-			$('#project-details .panel').removeClass('active');
-			window.setTimeout(function(){
-				$('#project-details').removeClass('active');
-			}, 1000);			
-		})
-
+		var mainAnimations = new NicolasMain(1000);
 	})
 	</script>
 	
