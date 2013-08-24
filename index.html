@@ -58,7 +58,7 @@
 					<div class="hexagon-center"><span>FSPB</span></div>					
 				</li>
 			</ul>
-		</div>
+		</div>		
 		<div id="social">
 			<h2>Social</h2>
 			<ul>
@@ -78,6 +78,34 @@
 		</div>
 
 	</div>
+	<div id="project-details">
+		<div class="panel left"></div>
+		<div class="panel right"></div>
+		<article id="projet-content">
+			<h1 id="project-title"></h1>
+			<img src="" alt="" id="project-img">
+			<p id="project-description"></p>
+		</article>
+	</div>
+
+	<script src="static/js/jquery.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('.hexagons li').on('click',function(){
+			$('#project-details').addClass('active');
+			$('#project-details .panel').addClass('active');
+		})
+
+		$('#project-details .panel').on('click',function(){
+			
+			$('#project-details .panel').removeClass('active');
+			window.setTimeout(function(){
+				$('#project-details').removeClass('active');
+			}, 1000);			
+		})
+
+	})
+	</script>
 	
 </body>
 </html>
