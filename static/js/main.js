@@ -41,22 +41,21 @@ NicolasMain.prototype.listen = function(self){
 
 NicolasMain.prototype.showProjectDetails = function(self, hexagon){
 	
-
-
 	var currentProject = $(hexagon).find('article').clone();
-	console.log(currentProject);
+
 	this._projectDetailsWrapper.addClass('active');
 	this._panels.addClass('active');
 
 	if(currentProject.length)
 	{
 		window.setTimeout(function(){
-			self._projectDetailsWrapper.prepend(currentProject).find('article').removeClass('no-display');
+			self._projectDetailsWrapper.prepend(currentProject)
+			var newArticle = self._projectDetailsWrapper.find('article');
+			newArticle.fadeIn(200, function(){
+				self._panels.css({"height": newArticle.height() + 200})
+			});
 		}, this._delay);
 	}
-
-
-
 };
 
 NicolasMain.prototype.hideProjectDetails = function(self){
@@ -71,6 +70,7 @@ NicolasMain.prototype.hideProjectDetails = function(self){
 	this._panels.removeClass('active');
 	window.setTimeout(function(){
 		self._projectDetailsWrapper.removeClass('active');
+		self._panels.css({"height": "100%"})
 	}, this._delay);
 };
 

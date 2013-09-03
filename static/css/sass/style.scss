@@ -1,13 +1,17 @@
 @import "compass/reset";
+@import "compass/css3";
 @import "_font.scss";
 
 $text-color:#2d2d2d;
 $project-title-color:#f8f8f8;
 
 $blue: #89befa;
+$darkGrey : #2d2d2d;
+$lightWhite: #f8f8f8; 
 $background-color: #f8f8f8;
 
 $home-text-size:1.500em;
+$desc-text-size:1.100em;
 
 /* Media queries variables */
 $tablet: "only screen and (max-width : 960px)";
@@ -16,12 +20,16 @@ $phone: "only screen and (max-width : 360px)";
 
 body,html
 {
-	background: $background-color
+	background: $background-color;
+	
 }
 
-.no-display {
-	display: none;
+body{
+	width:100%;
+	overflow-x: hidden;
 }
+
+
 
 div.wrapper{
 
@@ -109,17 +117,17 @@ div.wrapper{
 			text-align: left;
 
 			margin-top:-45px;
-			
+
 			li:hover {
 				cursor:pointer;
 
 				img {
 					opacity:1;
-					transition:opacity 0.2s linear;
+					@include transition(opacity 0.2s linear);
 				}
 				div.hexagon-center {
 					opacity:0;
-					transition:opacity 0.2s linear;
+					@include transition(opacity 0.2s linear);
 				}
 				
 
@@ -141,7 +149,7 @@ div.wrapper{
 					position:absolute;
 					top:47px;
 					opacity:0;
-					transition:opacity 0.2s linear;
+					@include transition(opacity 0.2s linear);
 				}							
 
 				div.hexagon-center:before
@@ -169,7 +177,7 @@ div.wrapper{
 					position:relative;
 
 					opacity:1;
-					transition:opacity 0.2s linear;
+					@include transition(opacity 0.2s linear);
 				}
 
 
@@ -232,52 +240,52 @@ div.wrapper{
 				a.github
 				{
 					background:url('../../img/github.png') 0 0 no-repeat;
-					transition:background 0.2s linear;
+					@include transition(background 0.2s linear);
 				}
 				a.github:hover
 				{
 					background:url('../../img/github.png') 0 -64px no-repeat;
-					transition:background 0.2s linear;	
+					@include transition(background 0.2s linear);
 				}
 				a.flickr
 				{
 					background:url('../../img/flickr.png') 0 0 no-repeat;
-					transition:background 0.2s linear;
+					@include transition(background 0.2s linear);
 				}
 				a.flickr:hover
 				{
 					background:url('../../img/flickr.png') 0 -64px no-repeat;
-					transition:background 0.2s linear;
+					@include transition(background 0.2s linear);
 				}
 				a.pinterest
 				{
 					background:url('../../img/pinterest.png') 0 0 no-repeat;
-					transition:background 0.2s linear;
+					@include transition(background 0.2s linear);
 				}
 				a.pinterest:hover
 				{
 					background:url('../../img/pinterest.png') 0 -64px no-repeat;
-					transition:background 0.2s linear;
+					@include transition(background 0.2s linear);
 				}
 				a.twitter
 				{
 					background:url('../../img/twitter.png') 0 0 no-repeat;
-					transition:background 0.2s linear;
+					@include transition(background 0.2s linear);
 				}
 				a.twitter:hover
 				{
 					background:url('../../img/twitter.png') 0 -64px no-repeat;
-					transition:background 0.2s linear;
+					@include transition(background 0.2s linear);
 				}
 				a.linkedin
 				{
 					background:url('../../img/github.png') 0 0 no-repeat;
-					transition:background 0.2s linear;
+					@include transition(background 0.2s linear);
 				}
 				a.linkedin:hover
 				{
 					background:url('../../img/github.png') 0 0 no-repeat;
-					transition:background 0.2s linear;
+					@include transition(background 0.2s linear);
 				}
 			}
 		}
@@ -285,75 +293,105 @@ div.wrapper{
 	}
 }
 
+.projet-content{
+	display: none;
+	position: absolute;
+	top: 0; left: 0;  right: 0;
+	margin: 100px auto;
+
+	z-index: 1;
+
+	width:960px;
+	
+
+	text-align: center;
+
+	h1.project-title{
+		font-family: quicksandbook;
+		color: $lightWhite;
+		font-size: $home-text-size;
+
+		margin-bottom: 20px;
+
+	}
+
+	img.project-img{
+		margin-bottom: 20px;
+	}
+
+	p.project-description{
+		width:600px;
+		margin:auto;
+		text-align: justify;
+
+		font-family: quicksandlight_oblique;
+		font-size: $desc-text-size;
+		color: $lightWhite;
+	}
+	
+}
+
 div#project-details
+{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	z-index: 0;
+	overflow-x:hidden;
+	overflow-y:scroll;
+
+	/*
+	div.panel.left
+	{
+		width:50%;
+		height:100%;
+		float:left;
+		background:$darkGrey;
+		position: relative;
+		left:-50%;
+
+		@include transition(left 1s linear);			
+
+	}
+	*/
+	div.panel.right
 	{
 		width:100%;
 		height:100%;
-		position:fixed;
-		top:0;
-		z-index: 0;
-
-		.projet-content{
-			position: absolute;
-			top:0;
-			z-index: 1;
-		}
-
-		div.panel.left
-		{
-			width:50%;
-			height:100%;
-			float:left;
-			background:$blue;
-			position: relative;
-			left:-50%;
-
-			-webkit-transition:left 1s;
-			-moz-transition:left 1s;
-			-o-transition:left 1s;
-			-ms-transition:left 1s;
-			
-
-		}
-		div.panel.right
-		{
-			width:50%;
-			height:100%;
-			float:right;
-			background:$blue;
-			position: relative;
-			right:-50%;
-
-			-webkit-transition:right 1s;
-			-moz-transition:right 1s;
-			-o-transition:right 1s;
-			-ms-transition:right 1s;
-			
-		}
-
-		div.panel.left.active
-		{
-			left:0;	
-			-webkit-transition:left 1s;
-			-moz-transition:left 1s;
-			-o-transition:left 1s;
-			-ms-transition:left 1s;
-
-		}
-		div.panel.right.active
-		{
-			right:0;
-			-webkit-transition:right 1s;
-			-moz-transition:right 1s;
-			-o-transition:right 1s;
-			-ms-transition:right 1s;
-			
-		}
+		float:right;
+		background:$darkGrey;
+		position: relative;
+		right:-100%;
+		
+		@include transition(right 1s linear);			
+		
 	}
-	div#project-details.active
+
+	/*
+	div.panel.left.active
 	{
-		z-index: 3;
+		left:0;	
+		@include transition(left 1s linear);
+
 	}
+	*/
+	div.panel.right.active
+	{
+		right:0;
+		@include transition(right 1s linear);
+		
+	}
+}
+div#project-details.active
+{
+	z-index: 3;
+
+
+}
+.project-details-resized{
+	height:auto;
+}
 
 @media #{$tablet}
 {
@@ -385,7 +423,7 @@ div#project-details
 
 					div.hexagon-center {
 						opacity:1;
-						transition:none;
+						@include transition(none);
 					}
 
 				}
@@ -415,7 +453,7 @@ div#project-details
 						position:relative;
 						top:0;
 						height:225px;
-						transition:none;
+						@include transition(none);
 
 					}
 
@@ -523,6 +561,3 @@ div#project-details
 		}
 	}
 }
-
-
-
