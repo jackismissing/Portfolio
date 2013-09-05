@@ -88,18 +88,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* Media queries variables */
-/* line 22, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 body, html {
   background: #f8f8f8;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 body {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 div.wrapper {
   width: 960px;
   margin: auto;
@@ -107,16 +107,16 @@ div.wrapper {
   position: relative;
   z-index: 1;
 }
-/* line 43, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 div.wrapper header {
   position: relative;
   margin-top: 70px;
 }
-/* line 48, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 div.wrapper header h1 {
   font-size: 0px;
 }
-/* line 53, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 div.wrapper header div#logo {
   width: 187px;
   margin: auto;
@@ -125,7 +125,7 @@ div.wrapper header div#logo {
   background: #f8f8f8;
   text-align: center;
 }
-/* line 65, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 div.wrapper header nav {
   z-index: 1;
   width: 100%;
@@ -137,31 +137,31 @@ div.wrapper header nav {
   color: #2d2d2d;
   border-bottom: solid 1px #2d2d2d;
 }
-/* line 80, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 div.wrapper header nav ul {
   width: 300px;
 }
-/* line 84, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 div.wrapper header nav ul li {
   display: inline-block;
 }
-/* line 93, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 div.wrapper h2 {
   margin: 70px 0 0 0;
   font-family: quicksandbook;
   color: #2d2d2d;
   font-size: 1.5em;
 }
-/* line 101, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 div.wrapper h2 em {
   font-family: quicksandlight_oblique;
   color: #2d2d2d;
 }
-/* line 108, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 div.wrapper div#projects {
   margin-top: 70px;
 }
-/* line 112, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 div.wrapper div#projects ul {
   font-family: quicksandlight_oblique;
   color: #f8f8f8;
@@ -170,11 +170,11 @@ div.wrapper div#projects ul {
   text-align: left;
   margin-top: -45px;
 }
-/* line 121, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 div.wrapper div#projects ul li:hover {
   cursor: pointer;
 }
-/* line 124, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 div.wrapper div#projects ul li:hover img {
   opacity: 1;
   -webkit-transition: opacity 0.2s linear;
@@ -182,7 +182,7 @@ div.wrapper div#projects ul li:hover img {
   -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
-/* line 128, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 div.wrapper div#projects ul li:hover div.hexagon-center {
   opacity: 0;
   -webkit-transition: opacity 0.2s linear;
@@ -190,7 +190,7 @@ div.wrapper div#projects ul li:hover div.hexagon-center {
   -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
-/* line 138, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 div.wrapper div#projects ul li {
   display: inline-block;
   height: 250px;
@@ -199,7 +199,7 @@ div.wrapper div#projects ul li {
   margin-bottom: -56px;
   position: relative;
 }
-/* line 148, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 div.wrapper div#projects ul li img {
   position: absolute;
   top: 47px;
@@ -209,7 +209,7 @@ div.wrapper div#projects ul li img {
   -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
-/* line 156, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 div.wrapper div#projects ul li div.hexagon-center:before {
   content: "";
   width: 0px;
@@ -220,7 +220,7 @@ div.wrapper div#projects ul li div.hexagon-center:before {
   border-left: 113px solid transparent;
   border-right: 113px solid transparent;
 }
-/* line 174, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 div.wrapper div#projects ul li div.hexagon-center {
   background: #89befa;
   height: 120px;
@@ -231,7 +231,7 @@ div.wrapper div#projects ul li div.hexagon-center {
   -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
-/* line 185, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 div.wrapper div#projects ul li div.hexagon-center:after {
   content: "";
   width: 0px;
@@ -243,7 +243,7 @@ div.wrapper div#projects ul li div.hexagon-center:after {
   border-left: 113px solid transparent;
   border-right: 113px solid transparent;
 }
-/* line 202, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 div.wrapper div#projects ul li span {
   margin: 50% auto;
   display: block;
@@ -251,30 +251,30 @@ div.wrapper div#projects ul li span {
   line-height: 120px;
   text-align: center;
 }
-/* line 214, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 div.wrapper div#projects ul li:nth-child(7n-2) {
   margin-left: 128px;
 }
-/* line 220, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 div.wrapper div#social {
   margin: 175px auto 0 auto;
 }
-/* line 225, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 div.wrapper div#social ul {
   margin-top: 70px;
   text-align: center;
 }
-/* line 230, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 div.wrapper div#social ul li {
   display: inline-block;
 }
-/* line 234, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 div.wrapper div#social ul li a {
   display: block;
   width: 64px;
   height: 64px;
 }
-/* line 241, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 div.wrapper div#social ul li a.github {
   background: url("../../img/github.png") 0 0 no-repeat;
   -webkit-transition: background 0.2s linear;
@@ -282,7 +282,7 @@ div.wrapper div#social ul li a.github {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
-/* line 246, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 div.wrapper div#social ul li a.github:hover {
   background: url("../../img/github.png") 0 -64px no-repeat;
   -webkit-transition: background 0.2s linear;
@@ -290,7 +290,7 @@ div.wrapper div#social ul li a.github:hover {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
-/* line 251, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 div.wrapper div#social ul li a.flickr {
   background: url("../../img/flickr.png") 0 0 no-repeat;
   -webkit-transition: background 0.2s linear;
@@ -298,7 +298,7 @@ div.wrapper div#social ul li a.flickr {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
-/* line 256, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 div.wrapper div#social ul li a.flickr:hover {
   background: url("../../img/flickr.png") 0 -64px no-repeat;
   -webkit-transition: background 0.2s linear;
@@ -306,7 +306,7 @@ div.wrapper div#social ul li a.flickr:hover {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
-/* line 261, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 div.wrapper div#social ul li a.pinterest {
   background: url("../../img/pinterest.png") 0 0 no-repeat;
   -webkit-transition: background 0.2s linear;
@@ -314,7 +314,7 @@ div.wrapper div#social ul li a.pinterest {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
-/* line 266, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 div.wrapper div#social ul li a.pinterest:hover {
   background: url("../../img/pinterest.png") 0 -64px no-repeat;
   -webkit-transition: background 0.2s linear;
@@ -322,7 +322,7 @@ div.wrapper div#social ul li a.pinterest:hover {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
-/* line 271, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 div.wrapper div#social ul li a.twitter {
   background: url("../../img/twitter.png") 0 0 no-repeat;
   -webkit-transition: background 0.2s linear;
@@ -330,7 +330,7 @@ div.wrapper div#social ul li a.twitter {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
-/* line 276, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 div.wrapper div#social ul li a.twitter:hover {
   background: url("../../img/twitter.png") 0 -64px no-repeat;
   -webkit-transition: background 0.2s linear;
@@ -338,7 +338,7 @@ div.wrapper div#social ul li a.twitter:hover {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
-/* line 281, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 div.wrapper div#social ul li a.linkedin {
   background: url("../../img/linkedin.png") 0 0 no-repeat;
   -webkit-transition: background 0.2s linear;
@@ -346,7 +346,7 @@ div.wrapper div#social ul li a.linkedin {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
-/* line 286, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 div.wrapper div#social ul li a.linkedin:hover {
   background: url("../../img/linkedin.png") 0 -64px no-repeat;
   -webkit-transition: background 0.2s linear;
@@ -354,27 +354,27 @@ div.wrapper div#social ul li a.linkedin:hover {
   -o-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
-/* line 294, ../sass/style.scss */
+/* line 296, ../sass/style.scss */
 div.wrapper div#contact {
   margin-bottom: 60px;
 }
-/* line 297, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 div.wrapper div#contact a:link, div.wrapper div#contact a:visited {
   text-decoration: none;
   color: #2d2d2d;
 }
-/* line 302, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 div.wrapper div#contact a:hover, div.wrapper div#contact a:active {
   text-decoration: none;
   color: #89befa;
 }
 
-/* line 309, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 #project-details::-webkit-scrollbar {
   display: none;
 }
 
-/* line 314, ../sass/style.scss */
+/* line 318, ../sass/style.scss */
 .projet-content {
   display: none;
   position: absolute;
@@ -386,18 +386,18 @@ div.wrapper div#contact a:hover, div.wrapper div#contact a:active {
   width: 960px;
   text-align: center;
 }
-/* line 327, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 .projet-content h1.project-title {
   font-family: quicksandbook;
   color: #f8f8f8;
   font-size: 3em;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
 }
-/* line 336, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 .projet-content img.project-img {
   margin-bottom: 40px;
 }
-/* line 340, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .projet-content p.project-description {
   width: 600px;
   margin: auto;
@@ -407,7 +407,7 @@ div.wrapper div#contact a:hover, div.wrapper div#contact a:active {
   color: #f8f8f8;
 }
 
-/* line 353, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 div#project-details {
   width: 100%;
   height: 100%;
@@ -439,7 +439,7 @@ div#project-details {
   	}
   	*/
 }
-/* line 377, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 div#project-details div.panel.right {
   width: 100%;
   height: 100%;
@@ -452,7 +452,27 @@ div#project-details div.panel.right {
   -o-transition: right 1s linear;
   transition: right 1s linear;
 }
-/* line 398, ../sass/style.scss */
+/* line 392, ../sass/style.scss */
+div#project-details div#close-bar {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  background: #f8553a;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 402, ../sass/style.scss */
+div#project-details div#close-bar span {
+  display: block;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  margin: auto;
+  font-family: quicksandbook;
+  color: #f8f8f8;
+  font-size: 1.5em;
+}
+/* line 427, ../sass/style.scss */
 div#project-details div.panel.right.active {
   right: 0;
   -webkit-transition: right 1s linear;
@@ -461,38 +481,38 @@ div#project-details div.panel.right.active {
   transition: right 1s linear;
 }
 
-/* line 405, ../sass/style.scss */
+/* line 434, ../sass/style.scss */
 div#project-details.active {
   z-index: 3;
 }
 
-/* line 410, ../sass/style.scss */
+/* line 439, ../sass/style.scss */
 .project-details-resized {
   height: auto;
 }
 
 @media only screen and (max-width: 960px) {
-  /* line 416, ../sass/style.scss */
+  /* line 445, ../sass/style.scss */
   div.wrapper {
     width: 100%;
   }
-  /* line 422, ../sass/style.scss */
+  /* line 451, ../sass/style.scss */
   div.wrapper header nav {
     display: none;
   }
-  /* line 427, ../sass/style.scss */
+  /* line 456, ../sass/style.scss */
   div.wrapper header h2#description {
     padding: 0 20px;
   }
-  /* line 434, ../sass/style.scss */
+  /* line 463, ../sass/style.scss */
   div.wrapper div#projects {
     margin: 70px 0 0 0;
   }
-  /* line 437, ../sass/style.scss */
+  /* line 466, ../sass/style.scss */
   div.wrapper div#projects ul {
     margin: 0;
   }
-  /* line 442, ../sass/style.scss */
+  /* line 471, ../sass/style.scss */
   div.wrapper div#projects ul li:hover div.hexagon-center {
     opacity: 1;
     -webkit-transition: none;
@@ -500,24 +520,24 @@ div#project-details.active {
     -o-transition: none;
     transition: none;
   }
-  /* line 450, ../sass/style.scss */
+  /* line 479, ../sass/style.scss */
   div.wrapper div#projects ul li {
     display: block;
     height: 225px;
     width: 100%;
     margin: 0 0 5px 0;
   }
-  /* line 456, ../sass/style.scss */
+  /* line 485, ../sass/style.scss */
   div.wrapper div#projects ul li img {
     display: none;
   }
-  /* line 461, ../sass/style.scss */
+  /* line 490, ../sass/style.scss */
   div.wrapper div#projects ul li div.hexagon-center:before {
     display: none;
     position: relative;
     top: 0;
   }
-  /* line 469, ../sass/style.scss */
+  /* line 498, ../sass/style.scss */
   div.wrapper div#projects ul li div.hexagon-center {
     background: #89befa;
     position: relative;
@@ -528,13 +548,13 @@ div#project-details.active {
     -o-transition: none;
     transition: none;
   }
-  /* line 480, ../sass/style.scss */
+  /* line 509, ../sass/style.scss */
   div.wrapper div#projects ul li div.hexagon-center:after {
     display: none;
     position: relative;
     top: 0;
   }
-  /* line 487, ../sass/style.scss */
+  /* line 516, ../sass/style.scss */
   div.wrapper div#projects ul li span {
     margin: 0;
     display: block;
@@ -542,77 +562,81 @@ div#project-details.active {
     line-height: 225px;
     text-align: center;
   }
-  /* line 499, ../sass/style.scss */
+  /* line 528, ../sass/style.scss */
   div.wrapper div#projects ul li:nth-child(7n-2) {
     margin-left: 0;
   }
-  /* line 506, ../sass/style.scss */
+  /* line 535, ../sass/style.scss */
   div.wrapper div#social {
     margin: 70px auto 0 auto;
   }
-  /* line 511, ../sass/style.scss */
+  /* line 540, ../sass/style.scss */
   div.wrapper div#social h2 {
     display: none;
   }
-  /* line 516, ../sass/style.scss */
+  /* line 545, ../sass/style.scss */
   div.wrapper div#social ul {
     margin: 0;
   }
-  /* line 521, ../sass/style.scss */
+  /* line 550, ../sass/style.scss */
   div.wrapper div#social ul li {
     display: inline-block;
   }
-  /* line 525, ../sass/style.scss */
+  /* line 554, ../sass/style.scss */
   div.wrapper div#social ul li a {
     display: block;
     width: 64px;
     height: 64px;
   }
-  /* line 532, ../sass/style.scss */
+  /* line 561, ../sass/style.scss */
   div.wrapper div#social ul li a.github {
     background: url("../../img/github.png") 0 -64px no-repeat;
   }
-  /* line 538, ../sass/style.scss */
+  /* line 567, ../sass/style.scss */
   div.wrapper div#social ul li a.flickr {
     background: url("../../img/flickr.png") 0 -64px no-repeat;
   }
-  /* line 543, ../sass/style.scss */
+  /* line 572, ../sass/style.scss */
   div.wrapper div#social ul li a.pinterest {
     background: url("../../img/pinterest.png") 0 -64px no-repeat;
   }
-  /* line 549, ../sass/style.scss */
+  /* line 578, ../sass/style.scss */
   div.wrapper div#social ul li a.twitter {
     background: url("../../img/twitter.png") 0 -64px no-repeat;
   }
-  /* line 555, ../sass/style.scss */
+  /* line 584, ../sass/style.scss */
   div.wrapper div#social ul li a.linkedin {
     background: url("../../img/linkedin.png") 0 -64px no-repeat;
   }
 
-  /* line 566, ../sass/style.scss */
+  /* line 595, ../sass/style.scss */
   .projet-content {
     width: 100%;
-    margin: 40px auto;
+    margin: 60px auto;
+  }
+  /* line 600, ../sass/style.scss */
+  .projet-content h1.project-title {
+    margin-bottom: 40px;
   }
 }
-@media only screen and (max-width: 360px) {
-  /* line 577, ../sass/style.scss */
-  div.wrapper {
-    width: 100%;
-  }
-  /* line 584, ../sass/style.scss */
-  div.wrapper header h2#description {
-    text-align: left;
+@media only screen and (max-width: 600px) {
+  /* line 612, ../sass/style.scss */
+  .projet-content::-webkit-scrollbar {
+    display: none;
   }
 
-  /* line 592, ../sass/style.scss */
-  .projet-content img.project-img {
-    width: 300px;
-    height: 200px;
+  /* line 617, ../sass/style.scss */
+  .projet-content {
+    overflow-y: scroll;
   }
-  /* line 596, ../sass/style.scss */
+  /* line 621, ../sass/style.scss */
+  .projet-content img.project-img {
+    width: 400px;
+    height: 267px;
+  }
+  /* line 625, ../sass/style.scss */
   .projet-content p.project-description {
-    width: 300;
+    width: 400px;
     margin: auto;
     padding: 0 10px;
     text-align: left;
@@ -620,4 +644,34 @@ div#project-details.active {
     font-size: 1.1em;
     color: #f8f8f8;
   }
+}
+@media only screen and (max-width: 360px) {
+  /* line 641, ../sass/style.scss */
+  div.wrapper {
+    width: 100%;
+  }
+  /* line 648, ../sass/style.scss */
+  div.wrapper header h2#description {
+    text-align: left;
+  }
+
+  /* line 656, ../sass/style.scss */
+  .projet-content img.project-img {
+    width: 300px;
+    height: 200px;
+  }
+  /* line 660, ../sass/style.scss */
+  .projet-content p.project-description {
+    width: 300px;
+    margin: auto;
+    padding: 0 10px;
+    text-align: left;
+    font-family: quicksandlight_oblique;
+    font-size: 1.1em;
+    color: #f8f8f8;
+  }
+}
+/* line 678, ../sass/style.scss */
+.no-display {
+  display: none;
 }

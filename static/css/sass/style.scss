@@ -7,7 +7,8 @@ $project-title-color:#f8f8f8;
 
 $blue: #89befa;
 $darkGrey : #2d2d2d;
-$lightWhite: #f8f8f8; 
+$lightWhite: #f8f8f8;
+$salmon:#f8553a; 
 $background-color: #f8f8f8;
 
 $home-text-size:1.500em;
@@ -15,6 +16,7 @@ $desc-text-size:1.100em;
 
 /* Media queries variables */
 $tablet: "only screen and (max-width : 960px)";
+$middle-res: "only screen and (max-width : 600px)";
 $phone: "only screen and (max-width : 360px)";
 
 
@@ -306,9 +308,11 @@ div.wrapper{
 	}
 }
 
+
 #project-details::-webkit-scrollbar { 
     display: none; 
 }
+
 
 
 .projet-content{
@@ -320,7 +324,6 @@ div.wrapper{
 	z-index: 1;
 
 	width:960px;
-	
 
 	text-align: center;
 
@@ -329,7 +332,7 @@ div.wrapper{
 		color: $lightWhite;
 		font-size: $home-text-size * 2;
 
-		margin-bottom: 40px;
+		margin-bottom: 90px;
 
 	}
 
@@ -384,6 +387,32 @@ div#project-details
 		
 		@include transition(right 1s linear);			
 		
+	}
+
+	div#close-bar{
+		width:100%;
+		height:30px;
+		position:absolute;
+		background:$salmon;
+		text-align: center;
+
+		cursor:pointer;
+
+
+		span{
+
+
+			display: block;
+			width:150px;
+			height:30px;
+			line-height: 30px;
+			margin:auto;
+
+			font-family: quicksandbook;
+			color:$lightWhite;
+			font-size: $home-text-size ;
+
+		}
 	}
 
 	/*
@@ -566,10 +595,45 @@ div#project-details.active
 	.projet-content{
 
 		width:100%;
-		margin:40px auto;
+		margin:60px auto;
+
+		h1.project-title{
+		margin-bottom: 40px;
+
+	}
 		
 	
 	}
+}
+
+@media #{$middle-res}
+{
+
+	.projet-content::-webkit-scrollbar { 
+	    display: none; 
+	}
+
+
+	.projet-content{
+
+		overflow-y: scroll; 
+
+		img.project-img{
+		width:400px;
+		height:267px;
+		}
+		p.project-description{
+			width:400px;
+			margin:auto;
+			padding: 0 10px;
+			text-align: left;
+
+			font-family: quicksandlight_oblique;
+			font-size: $desc-text-size;
+			color: $lightWhite;
+		}		
+		
+	}	
 }
 
 @media #{$phone}
@@ -594,7 +658,7 @@ div#project-details.active
 		height:200px;
 		}
 		p.project-description{
-			width:300;
+			width:300px;
 			margin:auto;
 			padding: 0 10px;
 			text-align: left;
@@ -608,6 +672,9 @@ div#project-details.active
 		
 	
 	}
-
 	
+}
+
+.no-display{
+	display: none;
 }
