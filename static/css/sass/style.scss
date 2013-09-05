@@ -68,7 +68,7 @@ div.wrapper{
 			width:100%;
 			position:absolute;
 			left:0;
-			top:63px;
+			top:87px;
 
 			font-family: quicksandlight_oblique;
 			font-size: $home-text-size;
@@ -279,25 +279,43 @@ div.wrapper{
 				}
 				a.linkedin
 				{
-					background:url('../../img/github.png') 0 0 no-repeat;
+					background:url('../../img/linkedin.png') 0 0 no-repeat;
 					@include transition(background 0.2s linear);
 				}
 				a.linkedin:hover
 				{
-					background:url('../../img/github.png') 0 0 no-repeat;
+					background:url('../../img/linkedin.png') 0 -64px no-repeat;
 					@include transition(background 0.2s linear);
 				}
 			}
 		}
 
 	}
+	div#contact{
+		margin-bottom: 60px;
+
+		a:link, a:visited{
+			text-decoration: none;
+			color:$text-color;
+		}
+
+		a:hover, a:active{
+			text-decoration: none;
+			color:$blue;
+		}
+	}
 }
+
+#project-details::-webkit-scrollbar { 
+    display: none; 
+}
+
 
 .projet-content{
 	display: none;
 	position: absolute;
 	top: 0; left: 0;  right: 0;
-	margin: 100px auto;
+	margin: 120px auto;
 
 	z-index: 1;
 
@@ -309,14 +327,14 @@ div.wrapper{
 	h1.project-title{
 		font-family: quicksandbook;
 		color: $lightWhite;
-		font-size: $home-text-size;
+		font-size: $home-text-size * 2;
 
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 
 	}
 
 	img.project-img{
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 
 	p.project-description{
@@ -535,7 +553,7 @@ div#project-details.active
 
 					a.linkedin
 					{
-						background:url('../../img/twitter.png') 0 -64px no-repeat;
+						background:url('../../img/linkedin.png') 0 -64px no-repeat;
 						
 					}
 
@@ -543,6 +561,14 @@ div#project-details.active
 			}
 			
 		}
+	}
+
+	.projet-content{
+
+		width:100%;
+		margin:40px auto;
+		
+	
 	}
 }
 
@@ -560,4 +586,28 @@ div#project-details.active
 			}
 		}
 	}
+
+	.projet-content{
+
+		img.project-img{
+		width:300px;
+		height:200px;
+		}
+		p.project-description{
+			width:300;
+			margin:auto;
+			padding: 0 10px;
+			text-align: left;
+
+			font-family: quicksandlight_oblique;
+			font-size: $desc-text-size;
+			color: $lightWhite;
+		}
+
+
+		
+	
+	}
+
+	
 }

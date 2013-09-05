@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nicolas Garnier</title>
+
+    <link href="static/css/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="static/css/stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+    	<link href="static/css/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<div class="wrapper">
+		<!--
+		HEADER
+		-->
+		<header>
+			<h1>Nicolas Garnier</h1>
+			<div id="logo">
+				<img src="static/img/logo.png" alt="Nicolas Garnier" width="147" height="175"/>
+			</div>
+			<nav>
+				<ul>
+					<li id="work">Work</li>
+					<li id="social">Social</li>
+					<li id="contact">Contact</li>
+				</ul>
+			</nav>
+			<h2 id="description">
+				<span>Hello, I'm Nicolas, a junior web developper &amp; multimedia student at Gobelins in Paris.</span>
+				<span>I love <em>Javascript</em>, <em>HTML5</em>, <em>Python</em> &amp; <em>Processing</em>.</span>
+			</h2>
+		</header>
+	
+		<!--
+		CONTAINER
+		-->
+		<div id="projects" class="hexagons">
+			<ul>
+				<li>
+					<img src="static/img/feng.png" alt="lol"/>					
+					<div class="hexagon-center">
+						<span class='title'>Heapself</span>
+						<article class="projet-content">
+							<h1 class="project-title">Heapself</h1>
+							<img src="http://placehold.it/600x400" alt="" class="project-img">
+							<p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non risus a eros vestibulum iaculis vitae eu lacus. Aliquam erat volutpat. Vivamus tristique, nulla id dapibus facilisis, lacus dui congue libero, sed congue ante eros vitae magna. Curabitur non felis faucibus, interdum risus vel, congue urna. Aliquam sapien mauris, cursus a felis et, faucibus dapibus libero. Proin eu lectus eu metus vehicula fringilla vel vitae nisi. Nunc sit amet lacus auctor nisl hendrerit euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla felis mi, ornare vitae sem id, hendrerit pulvinar nisi. Ut ac sapien et ipsum tincidunt tincidunt. Nulla elementum a arcu vitae fermentum. Ut hendrerit, tortor non consectetur feugiat, dui ipsum laoreet nibh, vel semper dolor erat at dolor. Curabitur viverra, lorem quis sagittis consequat, nibh urna molestie magna, a volutpat purus ligula eget odio.
+
+Phasellus id scelerisque nunc, id iaculis mi. Ut purus nibh, vestibulum in dolor at, pharetra tempor augue. Integer auctor et odio ac consectetur. Vestibulum pellentesque, urna vitae lacinia scelerisque, nisi nulla dictum felis, nec suscipit libero quam eu leo. Nulla viverra mi luctus magna placerat, eget tincidunt lacus tincidunt. Phasellus bibendum velit non lobortis laoreet. Nulla sit amet euismod nunc, nec lobortis quam. Donec ut sagittis magna.</p>
+						</article>
+					</div>
+						
+					
+				</li><!--
+				--><li>					
+					<div class="hexagon-center"><span>Trees</span></div>					
+				</li><!--
+				--><li>					
+					<div class="hexagon-center"><span>PHQ4</span></div>					
+				</li><!--
+				--><li>					
+					<div class="hexagon-center"><span>Zombies</span></div>					
+				</li><!--
+				--><li>					
+					<div class="hexagon-center"><span>FSPB</span></div>					
+				</li>
+			</ul>
+		</div>		
+		<div id="social">
+			<h2>Social</h2>
+			<ul>
+				<li><a class="github" href="#" title="Github"></a></li>
+				<li><a class="flickr" href="#" title='Flickr'></a></li>
+				<li><a class="pinterest" href="#" title="Pinterest"></a></li>
+				<li><a class="twitter" href="#" title="Twitter"></a></li>
+				<li><a class="linkedin"href="#" title="Linkedin"></a></li>
+			</ul>
+		</div>
+		<div id="contact">
+			<h2>Contact</h2>
+			<ul>
+				<li>email</li>
+				<li>CV</li>
+			</ul>
+		</div>
+
+	</div>
+	<div id="project-details">
+		<div class="panel right"></div>
+	</div>
+
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/main.js"></script>
+	<script>
+	$(document).ready(function(){
+		var mainAnimations = new NicolasMain(1000);
+	})
+	</script>
+	
+</body>
+</html>
