@@ -348,6 +348,12 @@ div.wrapper{
 		font-family: quicksandlight_oblique;
 		font-size: $desc-text-size;
 		color: $lightWhite;
+
+		a{
+			color:$salmon;
+			text-decoration: none;
+
+		}
 	}
 	
 }
@@ -429,6 +435,23 @@ div#project-details
 		@include transition(right 1s linear);
 		
 	}
+
+	article span
+	{
+		margin:0px 0 40px 0;
+
+		font-family: quicksandbook;
+		color: $text-color;
+		font-size: $home-text-size;
+
+		display: block;
+
+		em
+		{
+			font-family: quicksandlight_oblique;
+			color: $lightWhite;
+		}
+	}
 }
 div#project-details.active
 {
@@ -481,6 +504,8 @@ div#project-details.active
 					height:225px;
 					width:100%;
 					margin:0 0 5px 0;
+					padding: 0 10px;
+					@include box-sizing(border-box);
 
 					img{
 						display: none;

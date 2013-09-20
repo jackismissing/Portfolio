@@ -58,8 +58,15 @@ NicolasMain.prototype.showProjectDetails = function(self, hexagon){
 			self._mainWrapper.addClass('no-display');
 			self._projectDetailsWrapper.prepend(currentProject)
 			var newArticle = self._projectDetailsWrapper.find('article');
+			var newArticleHeight = newArticle.outerHeight( true );
+
 			newArticle.fadeIn(200, function(){
-				self._panels.css({"height": newArticle.height() + 200})
+
+				if(newArticleHeight >= $(window).height())
+				{
+					self._panels.css({"height": newArticleHeight + 200})
+					
+				}	
 			});
 		}, this._delay);
 	}
